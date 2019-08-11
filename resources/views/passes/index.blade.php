@@ -7,14 +7,15 @@
         <thead>
             <tr>
             <th scope="col">#</th>
-            <th scope="col">Description</th>
+            <th scope="col">Pass Number</th>
             <th scope="col">Type</th>
             </tr>
         </thead>
         <tbody>
+        <?php $i = 1 ?>
         <?php foreach($passes as $p) { ?>
             <tr>
-            <th scope="row"></th>
+            <th scope="row"><?php echo $i; $i++ ?></th>
             <td><?php echo $p->description ?></td>
             <td><?php echo $p->type ?></td>
             </tr>

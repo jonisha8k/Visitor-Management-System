@@ -6,16 +6,19 @@
 	<div class="collapse navbar-collapse" id="navbarSuppportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="/dashboard">Dashboard<span class="sr-only">       (current)</span></a>
+				<a class="nav-link" href="/admin/dashboard">Dashboard<span class="sr-only">       (current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/appointments">Appointments</a>
+				<a class="nav-link" href="/admin/visits">Visits</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/visitors">Visitors</a>
+				<a class="nav-link" href="/admin/visitors">Visitors</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/pass">Pass</a>
+				<a class="nav-link" href="/admin/employees">Employees</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/admin/passes">Passes</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>

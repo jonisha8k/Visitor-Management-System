@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -26,20 +24,32 @@ Route::get("/visits", "VisitsController@Index");
 Route::get("/visits/create", "VisitsController@Create");
 Route::post("/visits/save", "VisitsController@Save");
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
-{
-    Route::get('appointments', [
-        'uses' => 'AppointmentsController@index'
-    ]);
-    Route::get('employees', [
-        'uses' => 'EmployeesController@index'
-    ]);
-    });
-    //passes
+//passes
 Route::get("/passes", "PassController@Index");
 Route::get("/passes/create", "PassController@Create");
 Route::post("/passes/save", "PassController@Save"); 
 Route::get('/dashboard','DashboardController@Index');
+
+
+/***************************** Admin Routes ***********************************************/
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
+{
+    Route::get('dashboard', [
+        'uses' => 'DashboardController@index'
+    ]);
+    Route::get('visits', [
+        'uses' => 'AppointmentsController@index'
+    ]);
+    Route::get('visits/accept/{id}', [
+        'uses' => 'AppointmentsController@accept'
+    ]);
+    Route::get('employees', [
+        'uses' => 'EmployeesController@index'
+    ]);
+});
+
+
+  
 
 
 
