@@ -1,22 +1,23 @@
 @extends('layouts.layout')
-
 @section('content')
-<div class="row">
-    <div class="container col-md-8 col-md-offset-8">
-        <table class="table table-striped">
+
+        <a href="/admin/employees/form" class="btn btn-success">Add Employee</a><br/><br/>
+    
+    <table class="table table-striped">
         <thead>
             <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Department</th>
-            <th scope="col">Position</th>
+            <th>S.NO.</th>
+            <td>Name</td>
+            <td>Phone</td>
+            <td>Department</td>
+            <td>Position</td>
             </tr>
         </thead>
         <tbody>
+        <?php  $i=1 ?>
         <?php foreach($employees as $e) { ?>
             <tr>
-            <th scope="row"></th>
+            <td><?php echo $i++; ?></td>
             <td><?php echo $e->name; ?></td>
             <td><?php echo $e->phone ?></td>
             <td><?php echo $e->department ?></td>
@@ -25,7 +26,4 @@
         <?php }?>
         </tbody>
         </table>
-</div>
-</div>
-
 @endsection

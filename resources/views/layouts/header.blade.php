@@ -8,16 +8,16 @@
 			<li class="nav-item active">
 				<a class="nav-link" href="/admin/dashboard">Dashboard<span class="sr-only">       (current)</span></a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="/admin/visits">Visits</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="/admin/visitors">Visitors</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="/admin/employees">Employees</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="/admin/passes">Passes</a>
 			</li>
 			<li class="nav-item dropdown">

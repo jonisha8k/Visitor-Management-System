@@ -46,11 +46,15 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
     Route::get('employees', [
         'uses' => 'EmployeesController@index'
     ]);
+    Route::get('employees', [
+        'uses' => 'EmployeesController@index'
+    ]);
+
+    Route::get('/employees/form',[
+        'uses'=>'EmployeesController@form'
+    ]);
+    Route::post('/employees/save',[
+       'uses'=> 'EmployeesController@save'
+    ]);
+    
 });
-
-
-  
-
-
-
-
