@@ -4,10 +4,10 @@
      color:#fff;
 }
 .req-div{
-    background:#9561e2;
+    background:#6574cd;
 }
 .title{
-    color: #9561e2;
+    color: #343a40;
     padding:5px 5px;
 }
 </style>

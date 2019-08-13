@@ -25,6 +25,10 @@ class AppointmentsController extends Controller
 		$pass->save();
 		echo "<script>alert('Request Accepted')</script>";
 		return redirect('admin/visits');
+		
+		echo "<script>alert('Request Declined')</script>";
+		return redirect('admin/visits');
+		
 	}
 
 }
