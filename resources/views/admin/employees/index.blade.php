@@ -22,7 +22,10 @@
             <td><?php echo $e->phone ?></td>
             <td><?php echo $e->department ?></td>
             <td><?php echo $e->position ?></td>
+            <td>
+            <a href="/admin/visits/delete/<?php echo $e->id ?>">Delete</a>&nbsp;
             </tr>
+
         <?php }?>
         </tbody>
         </table>

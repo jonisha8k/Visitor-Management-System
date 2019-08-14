@@ -24,10 +24,14 @@ class AppointmentsController extends Controller
 		$pass->type="daily";
 		$pass->save();
 		echo "<script>alert('Request Accepted')</script>";
-		return redirect('admin/visits');
+		return redirect('/admin/visits');
+	}
 		
+	public function delete($id){
+		$apps=Visit::findOrFail($id)->delete();
+			
 		echo "<script>alert('Request Declined')</script>";
-		return redirect('admin/visits');
+		return redirect('/admin/visits');
 		
 	}
 

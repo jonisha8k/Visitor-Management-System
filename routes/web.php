@@ -40,11 +40,14 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
     Route::get('visits', [
         'uses' => 'AppointmentsController@index'
     ]);
+    Route::get('visitors', [
+        'uses' => 'VisitorsController@index'
+    ]);
     Route::get('visits/accept/{id}', [
         'uses' => 'AppointmentsController@accept'
     ]);
-    Route::get('visits/decline/{id}', [
-        'uses' => 'AppointmentsController@decline'
+    Route::get('visits/delete/{id}', [
+        'uses' => 'AppointmentsController@delete'
     ]);
     Route::get('employees', [
         'uses' => 'EmployeesController@index'

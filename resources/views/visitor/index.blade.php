@@ -31,8 +31,7 @@
 		<td><?php echo $visitor->phone ?></td>
 		<td><?php echo $visitor->office ?></td>
 		<td><?php echo $visitor->position ?></td>
-		<td><?php echo $visitor->created_at ?></td>
-		<td><?php echo $visitor->updated_at ?></td>
+		
 		</tr>
 		<?php } ?>
     </table>

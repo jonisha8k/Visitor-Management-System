@@ -54,6 +54,6 @@ class VisitorsController extends Controller
     	echo $request->get("position");
     	echo $request->get("created_at");
     	echo $request->get("updated_at");
-    }*/
+    }
     
 }

@@ -29,7 +29,7 @@ use App\Pass;
             <td><?php echo $v->visitor->name ?></td>
             
             <td><a href="/admin/visits/accept/<?php echo $v->id ?>" class="btn btn-success">Accept</a></td>
-            <td><a href="/admin/visits/decline/<?php echo $v->id ?>" class="btn btn-success">Decline</a></td>
+            <td><a href="/admin/visits/delete/<?php echo $v->id ?>" class="btn btn-success">Decline</a></td>
 
             </tr>
         <?php }?>
