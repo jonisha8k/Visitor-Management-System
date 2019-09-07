@@ -49,6 +49,10 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
     Route::get('visits/delete/{id}', [
         'uses' => 'AppointmentsController@delete'
     ]);
+    Route::get('visits/decline/{id}', [
+        'uses' => 'AppointmentsController@decline'
+    ]);
+    
     Route::get('employees', [
         'uses' => 'EmployeesController@index'
     ]);
@@ -62,5 +66,14 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function()
     Route::post('/employees/save',[
        'uses'=> 'EmployeesController@save'
     ]);
+    Route::get('/employees/edit/{id}',[
+        'uses'=> 'EmployeesController@edit'
+     ]);
+    Route::post('/employees/update/{id}',[
+        'uses'=> 'EmployeesController@update'
+     ]);
+     Route::get('employees/delete/{id}',[
+        'uses'=> 'EmployeesController@delete'
+     ]);
     
 });

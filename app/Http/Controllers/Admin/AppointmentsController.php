@@ -31,6 +31,7 @@ class AppointmentsController extends Controller
 		$apps=Visit::findOrFail($id)->delete();
 			
 		echo "<script>alert('Request Declined')</script>";
+		return redirect('admin/visits');
 		return redirect('/admin/visits');
 		
 	}

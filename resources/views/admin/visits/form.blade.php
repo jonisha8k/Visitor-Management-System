@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
 
-<form action="/admin/employees/save" method="POST">
+<form action="/admin/visits/save" method="POST">
     @csrf
     <table>
     <tr>
@@ -11,13 +11,13 @@
     <td>name:<input type="text" name="name"></td> <br>
     </tr>
     <tr>
-    <td>phone:<input type="number" name="phone"></td> <br>
+    <td>purpose:<input type="text" name="purpose"></td> <br>
     </tr>
     <tr>
-    <td>department:<input type="text" name="department"></td> <br>
+    <td>description:<input type="text" name="description"></td> <br>
     </tr>
     <tr>
-    <td>position:<input type="text" name="position"></td> <br>
+    <td>duration:<input type="text" name="duration"></td> <br>
     </tr>
     <tr>
     <input type="submit" value="submit">

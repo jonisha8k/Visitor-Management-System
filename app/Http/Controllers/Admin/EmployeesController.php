@@ -24,4 +24,23 @@ class EmployeesController extends Controller
             $employees->save();
             return redirect("/admin/employees");    
         }
+        public function edit($id){
+            $em=Employee::find($id);
+            return view('admin/employees.edit',compact('em'));
+        }
+        public function update(Request $request,$id){
+            $emArray=Employee::find($id);
+            $emArray->Name=$request->Name;
+            $emArray->Phone=$request->Phone;
+            $emArray->Department=$request->Department;
+            $emArray->Position=$request->Position;
+            $emArray->save();
+            return redirect('/admin/employees');
+
+        }
+        public function delete($id){
+            $em=Employee::findOrfail($id)->delete();
+            return redirect('/admin/employees');
+        }
+        
 }
