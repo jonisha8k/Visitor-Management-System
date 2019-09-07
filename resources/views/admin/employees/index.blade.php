@@ -23,7 +23,9 @@
             <td><?php echo $e->department ?></td>
             <td><?php echo $e->position ?></td>
             <td>
-            <a href="/admin/visits/delete/<?php echo $e->id ?>">Delete</a>&nbsp;
+            <a href="/admin/employees/delete/<?php echo $e->id ?>"class="btn btn-success"> Delete</a>&nbsp;
+            <a href="/admin/employees/edit/<?php echo $e->id ?>"class="btn btn-success"> Edit</a>&nbsp;
+            
             </tr>
 
         <?php }?>

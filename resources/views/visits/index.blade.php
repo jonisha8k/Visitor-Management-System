@@ -21,6 +21,7 @@
             <td><?php echo $v->description ?></td>
             <td><?php echo $v->duration ?></td>
             </tr>
+            <a href="/admin/employees/delete/<?php echo $e->id ?> Delete</a>&nbsp;
         <?php }?>
         </tbody>
         </table>

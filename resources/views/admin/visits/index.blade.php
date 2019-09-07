@@ -4,6 +4,7 @@
 <?php 
 use App\Employee;
 use App\Pass;
+use App\Visit;
 ?>
 <div class="row">
     <div class="container col-md-8 col-md-offset-8">
@@ -14,8 +15,6 @@ use App\Pass;
             <th scope="col">Purpose</th>
             <th scope="col">Description</th>
             <th scope="col">Duration</th>
-            <th scope="col">Assigned Person</th>
-            <th scope="col">Visitor</th>
             </tr>
         </thead>
         <tbody>
@@ -30,6 +29,7 @@ use App\Pass;
             
             <td><a href="/admin/visits/accept/<?php echo $v->id ?>" class="btn btn-success">Accept</a></td>
             <td><a href="/admin/visits/delete/<?php echo $v->id ?>" class="btn btn-success">Decline</a></td>
+            <td><a href="/admin/visits/decline/<?php echo $v->id ?>" class="btn btn-success">Decline</a></td>
 
             </tr>
         <?php }?>

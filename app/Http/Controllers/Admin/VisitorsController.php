@@ -11,21 +11,21 @@ class VisitorsController extends Controller
 	public function Dashboard() {
 		return view('visitor.visitorsdashboard');
 	}
-	/*
+	
     public function ViewAppointment() {
     	$visitor = Appointment::visitor();
     	$visitorappointments = Appointment::where('id', "=", Appointment::visitor()->id)->get();
     	
     }
 
-    /*public function Appointment(){
+    public function Appointment(){
     	$visitor=Visitor::select('name')->where('id',1)->get();
     	return view("visitor",compact("visitor"));
     }
 
     public function CreateAppointment() {
-    	return view("visitor");*/
-    public function Index(){
+    	return view("visitor");
+    public function Index() {
     	$visitors=visitor::all();
     	return view('visitor.index',compact('visitor'));
     }
@@ -54,6 +54,6 @@ class VisitorsController extends Controller
     	echo $request->get("position");
     	echo $request->get("created_at");
     	echo $request->get("updated_at");
-    }
+	}
     
 }
